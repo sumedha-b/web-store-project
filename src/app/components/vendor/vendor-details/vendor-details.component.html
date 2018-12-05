@@ -1,0 +1,36 @@
+<hr>
+
+<!-- <div id="toEdit"><app-edit-vendor></app-edit-vendor></div> -->
+
+<div class="row">
+  <br/><br/> 
+  <div class="thumb" style='float:left'>
+    <h3>{{vendorDetails.name}}</h3>
+    <img src="../../../../{{imageUri}}" alt="vendor memeber" style="width: 1in">
+    <a href="javascript:" (click)="deleteVendor()"><img src="../../../../assets/img/delete-edit/delete.png" style="margin-left:75px;width:50px"></a>
+    <a routerLink="/edit-vendor/{{vendorDetails.vcode}}" routerLinkActive="active"><img src="../../../../assets/img/delete-edit/edit.png" style="margin-left:10px;width:50px"></a>
+    <br><br>   
+  </div>   
+  <!-- <div style="float:right; align-self:center; margin-left:100px;"> -->
+    <table class="table table-bordered" style="block-size:3cm;">
+      <tbody>
+      <tr >
+        <td><b>VCode: </b></td>
+        <td><b>Mobile:</b> </td>
+        <td><b>Email:</b> </td>
+        <td><b>City:</b> </td>
+        <td><b>Comment:</b> </td>
+      </tr>
+      <tr >
+        <td>{{vendorDetails.vcode}}</td>
+        <td>{{vendorDetails.mobile}}</td>
+        <td>{{vendorDetails.email}}</td>
+        <td>{{vendorDetails.address}}</td>
+        <td>{{vendorDetails.comment}}</td>
+      </tr>
+      
+    </tbody>
+    </table>
+<!-- </div> -->
+  <br>
+ </div>

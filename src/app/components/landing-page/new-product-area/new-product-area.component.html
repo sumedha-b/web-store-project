@@ -1,0 +1,57 @@
+<br/><br/>
+<div class="trending-seller-area home-6">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-3 col-md-12">
+                <app-advertisement></app-advertisement>
+                <app-second-advertisement></app-second-advertisement>
+            </div>
+
+            <div class="col-lg-9 ">
+                <div class="home-six-trending-seller-filter"><!-- home six trending seller filter -->
+                   <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="home-six-trending-sellter-filter-nav">
+                                <ul class="nav nav-tabs"  role="tablist">
+                                    <!-- <li class="nav-item">
+                                        <a class="nav-link active" id="bestseller-tab" data-toggle="tab" href="#bestseller" role="tab" aria-controls="bestseller" aria-selected="true">best sellers</a>
+                                    </li> -->
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="hotdeals-tab" data-toggle="tab" href="#hotdeals" role="tab" aria-controls="hotdeals" aria-selected="true">hot deals</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="trendproduct-tab" data-toggle="tab" href="#trendproduct" role="tab" aria-controls="trendproduct" aria-selected="false">trending products</a>
+                                    </li>
+                                </ul> 
+                            </div>
+
+                            <div class="home-six-trending-masonry">
+                                <div class="tab-content" >
+                                    <!-- <div class="tab-pane fade show active" id="bestseller" role="tabpanel" aria-labelledby="bestseller-tab">
+                                        <app-product-details-cell></app-product-details-cell>
+                                    </div> -->
+                                    
+                                    <div class="tab-pane fade show active" id="hotdeals" role="tabpanel" aria-labelledby="hotdeals-tab">
+                                        <!-- <div class="row"> -->
+                                            <app-product-details-cell *ngFor="let item of hotDealsProducts" [productItem]="item"></app-product-details-cell>
+                                        <!-- </div> -->
+                                    </div>
+
+                                    <div class="tab-pane fade" id="trendproduct" role="tabpanel" aria-labelledby="trendproduct-tab">
+                                        <div class="row">
+                                                <app-product-details-cell *ngFor="let item of trendingProducts" [productItem]="item"></app-product-details-cell>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div><!-- //.home six trending seller filter -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

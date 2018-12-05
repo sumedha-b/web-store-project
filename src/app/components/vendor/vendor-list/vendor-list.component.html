@@ -1,0 +1,22 @@
+<section class="breadcrumb-area breadcrumb-bg">
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-12">
+              <div class="breadcrumb-inner"><!-- breadcrumb inner -->
+                  <div class="left-content-area"><!-- left content area -->
+                      <h1 class="title">Vendor List</h1>
+                  </div><!-- //. left content area -->
+                  <div class="right-content-area">
+                      <ul>
+                          <li><a href="index.html">Home</a></li>
+                          <li>  Vendor List </li>
+                      </ul>
+                  </div>
+              </div><!-- //. breadcrumb inner -->
+          </div>
+      </div>
+  </div>
+</section>
+<div class="container">
+  <app-vendor-details *ngFor="let item of vendorList" [pitem]="item" (notifyForDelete)='onNotifyForDelete($event)' (notifyForEdit)='onNotifyForEdit($event)'></app-vendor-details>
+</div>
