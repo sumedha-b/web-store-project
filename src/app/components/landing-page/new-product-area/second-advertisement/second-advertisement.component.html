@@ -1,9 +1,12 @@
 <div *ngIf="adLoaded | async" > <!-- if the observable has finished subscribing -->
-  <div class="single-offer-banner"><!-- single offer item tall -->
-    <a href="#">
+  <!-- <div class="single-offer-banner"> -->
         <div class="img-wrapper">
-            <img src="{{adDetails.imageUrl}}" alt="banner image">
+          <slideshow [height]="'400px'"
+            [minHeight]="'400px'"
+            [autoPlay]="true"
+            [showArrows]="false"
+            [imageUrls]="imageSources">
+          </slideshow>
         </div>
-    </a>
-  </div><!-- //.single oofer item tall -->
+  <!-- </div> -->
 </div>

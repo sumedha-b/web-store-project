@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Advertisement } from 'src/app/model/advertisement';
 import { AdvertisementService } from 'src/app/services/advertisement.service';
-import * as moment from 'moment';
 
 @Component({
   selector: 'app-advertisement',

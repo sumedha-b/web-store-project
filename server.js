@@ -69,8 +69,8 @@ require('./rest-api/utils/mongodb-utils')();
 // var dataPusher=require('./rest-api/utils/login-data-pusher');
 // dataPusher();
 
-// var adDataPusher=require('./rest-api/utils/ad-data-pusher');
-// adDataPusher();
+var adDataPusher=require('./rest-api/utils/ad-data-pusher');
+adDataPusher();
 
 // require('./rest-api/utils/product-data-pusher')();
 
