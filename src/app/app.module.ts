@@ -49,7 +49,8 @@ import { EditVendorComponent } from './components/vendor/edit-vendor/edit-vendor
 import { AdvertisementComponent } from './components/landing-page/new-product-area/advertisement/advertisement.component';
 import { SecondAdvertisementComponent } from './components/landing-page/new-product-area/second-advertisement/second-advertisement.component';
 import { ProductDetailsCellComponent } from './components/landing-page/new-product-area/product-details-cell/product-details-cell.component';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -104,7 +105,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    SlideshowModule
+    SlideshowModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

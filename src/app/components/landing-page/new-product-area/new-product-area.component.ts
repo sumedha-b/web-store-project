@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/model/product';
 
+
 @Component({
   selector: 'app-new-product-area',
   templateUrl: './new-product-area.component.html',
@@ -11,6 +12,7 @@ export class NewProductAreaComponent implements OnInit {
 
   private trendingProducts:Product[]=[];
   private hotDealsProducts:Product[]=[];
+  public toShow:Boolean=true;
 
   constructor(private productService:ProductService) { }
 
@@ -31,8 +33,8 @@ export class NewProductAreaComponent implements OnInit {
     for (var i=0; i<6; ++i) {
       this.trendingProducts[i]=products[i];
     }
-    console.log("trendingProducts:")
-    console.log(this.trendingProducts);
+    // console.log("trendingProducts:")
+    // console.log(this.trendingProducts);
   }
 
   public sortByDiscount(products) {
@@ -43,8 +45,7 @@ export class NewProductAreaComponent implements OnInit {
     for (var i=0; i<6; ++i) {
       this.hotDealsProducts[i]=products[i];
     }
-    console.log("hotDeals")
-    console.log(this.hotDealsProducts);
+    // console.log("hotDeals")
+    // console.log(this.hotDealsProducts);
   }
-
 }
