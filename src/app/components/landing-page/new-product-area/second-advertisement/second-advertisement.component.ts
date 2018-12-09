@@ -53,6 +53,11 @@ export class SecondAdvertisementComponent implements OnInit {
     this.toShow=false;
   }
 
+  public back() {
+    console.log("going back......");
+    this.toShow=true;
+  }
+
   saveNewAd() {
     this.modalService.dismissAll();
     console.log(this.adDetails[this.adToEdit]);
