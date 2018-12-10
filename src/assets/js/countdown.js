@@ -40,30 +40,30 @@ var homeSixTwo = function(){
  *  home six countdown area One
  * ----------------------------**/
 var home6 = function(){
-
-    var endingDate=document.getElementById('endDate').value;
-    var countDownEndDate = new Date(endingDate).getTime();
-    var data = countdownstartnodays(countDownEndDate);
-
-    var hours = document.getElementById('chour');
-    var miniutes = document.getElementById('cmin');
-    var seconds = document.getElementById('csec');
-
-    if( hours || miniutes){
-
-        hours.innerHTML = data.hours;
-        miniutes.innerHTML = data.minutes;
-        seconds.innerHTML = data.seconds;
-
-        if (data.distance < 0) {
-            clearInterval(home6);
-            hours.innerHTML = '00';
-            miniutes.innerHTML = '00';
-            seconds.innerHTML = '00';
+    if(document.getElementById('endDate')!=null){
+        var endingDate=document.getElementById('endDate').value;
+        var countDownEndDate = new Date(endingDate).getTime();
+        var data = countdownstartnodays(countDownEndDate);
+    
+        var hours = document.getElementById('chour');
+        var miniutes = document.getElementById('cmin');
+        var seconds = document.getElementById('csec');
+    
+        if( hours || miniutes){
+    
+            hours.innerHTML = data.hours;
+            miniutes.innerHTML = data.minutes;
+            seconds.innerHTML = data.seconds;
+    
+            if (data.distance < 0) {
+                clearInterval(home6);
+                hours.innerHTML = '00';
+                miniutes.innerHTML = '00';
+                seconds.innerHTML = '00';
+            }
+    
         }
-
     }
-
 };
 /**-------------------------------
  *  home one countdown area  * ----------------------------**/

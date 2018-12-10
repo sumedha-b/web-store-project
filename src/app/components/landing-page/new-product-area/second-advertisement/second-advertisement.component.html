@@ -1,4 +1,5 @@
-<button  class="button" (click)="editAd2(content)" >Edit</button>
+<button  class="button" (click)="openPopUp(content)" >Edit</button><!-- openPopUp takes a param, content, 
+    which is from the  modal (#content)-->
 <div *ngIf="adLoaded | async" > <!-- if the observable has finished subscribing -->
   <!-- <div class="single-offer-banner"> -->
         <div class="img-wrapper">
@@ -56,7 +57,7 @@
 
     <div *ngIf="!toShow">
     <div class="modal-body">
-        <h6>Select An Advertisement To Edit:</h6>
+        <h6>Editing Ad {{+adToEdit+1}}:</h6>
         <form>
             <div class="form-group">
                 <label for="title">Title (Optional)</label>

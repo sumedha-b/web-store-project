@@ -26,7 +26,7 @@ export class AdvertisementComponent implements OnInit {
     });
   }
 
-  public editAd1(content){
+  public openPopUp(content){
     console.log("opening modal.")
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'});
   }

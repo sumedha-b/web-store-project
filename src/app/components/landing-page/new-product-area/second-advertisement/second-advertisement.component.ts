@@ -17,7 +17,7 @@ export class SecondAdvertisementComponent implements OnInit {
   private imageSources:(string | IImage)[] = [];
   private imageShow:string|ArrayBuffer; 
   private selectedFile:File;
-  private adToEdit;
+  private adToEdit:number;
   private toShow:Boolean=true;
 
   constructor(private adService:AdvertisementService, private modalService:NgbModal) { }
@@ -43,7 +43,7 @@ export class SecondAdvertisementComponent implements OnInit {
     });
   }
 
-  public editAd2(content) {
+  public openPopUp(content) {
     console.log("opening modal.")
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'});
   }

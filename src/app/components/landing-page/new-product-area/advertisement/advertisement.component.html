@@ -1,4 +1,5 @@
-<button  class="button" (click)="editAd1(content)" >Edit</button>
+<button  class="button" (click)="openPopUp(content)" >Edit</button><!-- openPopUp takes a param, content, 
+    which is from the  modal (#content)-->
 <div *ngIf="adLoaded | async"> <!-- if the observable has finished subscribing -->
     <a href="{{adDetails.productId}}">
         <div class="single-offer-item-tall"><!-- single offer item tall -->
